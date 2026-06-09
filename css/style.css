@@ -167,10 +167,9 @@ strong { color: var(--text); font-weight: 600; }
 .hero {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: calc(var(--header-h) + 3rem) 0 4rem;
+  padding: calc(var(--header-h) + 2rem) 0 1.5rem;
 }
 .hero__inner {
   display: grid;
@@ -415,6 +414,9 @@ strong { color: var(--text); font-weight: 600; }
 }
 
 /* ── About ── */
+#about {
+  padding-top: 2rem;
+}
 .about__summary {
   width: 100%;
   font-size: 1.15rem;
