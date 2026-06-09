@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=13" />
+  <link rel="stylesheet" href="css/style.css?v=14" />
 </head>
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
@@ -25,6 +25,7 @@
       </button>
       <ul class="nav__links" id="navLinks">
         <li><a href="#about">About</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -119,13 +120,15 @@
           <h2 class="section__title">Professional Summary</h2>
         </div>
         <p class="about__summary reveal">
-          Results-driven Cloud/DevOps Engineer with <strong>6 years of corporate experience</strong>
-          in designing, deploying, and managing secure cloud infrastructure on AWS and Azure.
-          Skilled in Terraform automation, cloud hosting environments, Microsoft 365, and
-          infrastructure support. Proven expertise in delivering scalable, cost-optimized, and
-          reliable cloud solutions with a focus on high availability and security. Strong
-          communicator and problem solver, collaborating effectively with cross-functional teams
-          to ensure operational excellence.
+          Cloud &amp; DevOps Engineer with <strong>6 years of experience</strong> across Technical
+          Support, Web Hosting, Cloud Operations, and DevOps Engineering. Expertise in AWS, Azure,
+          Terraform, CI/CD, Infrastructure as Code (IaC), cloud migrations, monitoring,
+          Microsoft 365, incident management, and infrastructure support. Proven success in
+          designing, deploying, automating, and optimizing secure, scalable, and highly available
+          cloud environments. Strong background in L2/L3 operations, production support, cloud
+          security, cost optimization, and platform reliability. Recognized for driving automation
+          initiatives, improving operational efficiency, and collaborating with cross-functional
+          teams to deliver business-critical cloud solutions.
         </p>
         <div class="strengths reveal">
           <div class="strength">
@@ -147,6 +150,133 @@
             <div class="strength__icon">📈</div>
             <h3>Quick Learner</h3>
             <p>Adaptable to new technologies and fast-changing cloud environments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Roadmap -->
+    <section class="section section--alt" id="roadmap">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Career Path</span>
+          <h2 class="section__title">Professional Roadmap</h2>
+        </div>
+
+        <div class="roadmap reveal">
+          <div class="roadmap__track" aria-hidden="true">
+            <div class="roadmap__line"></div>
+            <div class="roadmap__dot roadmap__dot--1"></div>
+            <div class="roadmap__dot roadmap__dot--2"></div>
+            <div class="roadmap__dot roadmap__dot--3"></div>
+          </div>
+
+          <div class="roadmap__tabs" role="tablist" aria-label="Career roadmap">
+            <button
+              type="button"
+              class="roadmap__tab active"
+              role="tab"
+              id="tab-support"
+              aria-selected="true"
+              aria-controls="panel-support"
+              data-roadmap="support"
+            >
+              <span class="roadmap__step">01</span>
+              <span class="roadmap__tab-title">Technical Support Engineer</span>
+              <span class="roadmap__tab-sub">Web Hosting</span>
+            </button>
+            <button
+              type="button"
+              class="roadmap__tab"
+              role="tab"
+              id="tab-cloudops"
+              aria-selected="false"
+              aria-controls="panel-cloudops"
+              data-roadmap="cloudops"
+            >
+              <span class="roadmap__step">02</span>
+              <span class="roadmap__tab-title">Cloud Ops Engineer</span>
+              <span class="roadmap__tab-sub">Cloud Operations</span>
+            </button>
+            <button
+              type="button"
+              class="roadmap__tab"
+              role="tab"
+              id="tab-devops"
+              aria-selected="false"
+              aria-controls="panel-devops"
+              data-roadmap="devops"
+            >
+              <span class="roadmap__step">03</span>
+              <span class="roadmap__tab-title">DevOps Engineer</span>
+              <span class="roadmap__tab-sub">Current Role</span>
+            </button>
+          </div>
+
+          <div class="roadmap__panels">
+            <article
+              class="roadmap__panel active"
+              id="panel-support"
+              role="tabpanel"
+              aria-labelledby="tab-support"
+            >
+              <h3>Technical Support Engineer <span>· Web Hosting</span></h3>
+              <p>
+                Started my career in <strong>L1/L2 technical support</strong> for web hosting and
+                MSP environments — resolving client tickets, managing WHM/cPanel and Plesk servers,
+                and handling DNS, SSL, backups, and day-to-day infrastructure issues.
+              </p>
+              <ul class="roadmap__highlights">
+                <li>Web hosting support (cPanel/WHM, Plesk)</li>
+                <li>DNS, SSL &amp; backup management</li>
+                <li>Microsoft 365 user onboarding</li>
+                <li>Client-facing ticket resolution</li>
+              </ul>
+            </article>
+
+            <article
+              class="roadmap__panel"
+              id="panel-cloudops"
+              role="tabpanel"
+              aria-labelledby="tab-cloudops"
+              hidden
+            >
+              <h3>Cloud Ops Engineer <span>· Cloud Operations</span></h3>
+              <p>
+                Transitioned into <strong>cloud operations</strong> — managing AWS and Azure
+                environments, monitoring infrastructure with CloudWatch and Datadog, handling
+                incidents via JIRA and ServiceNow, and supporting cloud migrations and production
+                workloads at L2/L3 level.
+              </p>
+              <ul class="roadmap__highlights">
+                <li>AWS &amp; Azure day-to-day operations</li>
+                <li>Monitoring, alerting &amp; incident management</li>
+                <li>Cloud migrations &amp; production support</li>
+                <li>IAM, security &amp; access control</li>
+              </ul>
+            </article>
+
+            <article
+              class="roadmap__panel"
+              id="panel-devops"
+              role="tabpanel"
+              aria-labelledby="tab-devops"
+              hidden
+            >
+              <h3>Cloud / DevOps Engineer <span>· Present</span></h3>
+              <p>
+                Evolved into a <strong>DevOps Engineer</strong> — designing and automating cloud
+                infrastructure with Terraform, building CI/CD pipelines with GitHub Actions,
+                optimizing costs, and delivering secure, scalable, and highly available platforms
+                for business-critical applications.
+              </p>
+              <ul class="roadmap__highlights">
+                <li>Terraform IaC &amp; infrastructure automation</li>
+                <li>CI/CD with GitHub Actions &amp; Jenkins</li>
+                <li>Cloud security &amp; cost optimization</li>
+                <li>Platform reliability &amp; operational excellence</li>
+              </ul>
+            </article>
           </div>
         </div>
       </div>

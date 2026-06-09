@@ -39,6 +39,29 @@
   );
   revealEls.forEach((el) => observer.observe(el));
 
+  // Career roadmap tabs
+  const roadmapTabs = document.querySelectorAll('.roadmap__tab');
+  const roadmapPanels = document.querySelectorAll('.roadmap__panel');
+
+  roadmapTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const target = tab.getAttribute('data-roadmap');
+
+      roadmapTabs.forEach((t) => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      roadmapPanels.forEach((panel) => {
+        const isActive = panel.id === `panel-${target}`;
+        panel.classList.toggle('active', isActive);
+        panel.hidden = !isActive;
+      });
+    });
+  });
+
   // Active nav link highlight
   const sections = document.querySelectorAll('section[id]');
   const navAnchors = navLinks.querySelectorAll('a[href^="#"]');
