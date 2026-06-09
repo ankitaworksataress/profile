@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=9" />
+  <link rel="stylesheet" href="css/style.css?v=10" />
 </head>
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
@@ -24,6 +24,7 @@
       <ul class="nav__links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -326,8 +327,41 @@
       </div>
     </section>
 
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Work</span>
+          <h2 class="section__title">Projects</h2>
+        </div>
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon">💰</div>
+            <div>
+              <h3 class="project-card__title">CloudCostLens</h3>
+              <p class="project-card__tagline">Cloud cost analysis tools for infrastructure-as-code workflows.</p>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h4 class="project-card__subtitle">Terraform Cost Reviewer</h4>
+            <p class="project-card__desc">
+              The primary MVP is Terraform Cost Reviewer — a CLI and GitHub Action that analyzes
+              Terraform plans and estimates monthly AWS cost impact before changes are merged.
+            </p>
+            <div class="project-card__tags">
+              <span>Terraform</span><span>AWS</span><span>GitHub Actions</span><span>CLI</span><span>Cost Optimization</span>
+            </div>
+          </div>
+          <a href="https://github.com/ankitaworksataress/CloudCostLens" target="_blank" rel="noopener noreferrer" class="project-card__link">
+            View on GitHub
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </article>
+      </div>
+    </section>
+
     <!-- Certifications & Achievements -->
-    <section class="section section--alt" id="certifications">
+    <section class="section" id="certifications">
       <div class="container">
         <div class="certs__grid">
           <div>
@@ -391,7 +425,7 @@
     </section>
 
     <!-- Education -->
-    <section class="section" id="education">
+    <section class="section section--alt" id="education">
       <div class="container">
         <div class="section__header reveal">
           <span class="section__label">Academics</span>
@@ -403,12 +437,14 @@
             <h3 class="edu-card__degree">Bachelor of Engineering (B.E.)</h3>
             <p class="edu-card__field">Information Technology</p>
             <p class="edu-card__school">NDMVP'S Kbtcoe, Nashik</p>
+            <p class="edu-card__score">CGPA: <strong>7.74</strong></p>
           </article>
           <article class="edu-card reveal reveal--delay">
             <span class="edu-card__year">2014 – 2017</span>
             <h3 class="edu-card__degree">Diploma</h3>
             <p class="edu-card__field">Information Technology</p>
             <p class="edu-card__school">K. K. Wagh Polytechnic, Nashik</p>
+            <p class="edu-card__score">Score: <strong>72.82%</strong></p>
           </article>
         </div>
       </div>
