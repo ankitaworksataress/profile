@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
 </head>
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
@@ -72,21 +72,31 @@
           </div>
         </div>
         <div class="hero__visual reveal reveal--delay">
-          <div class="hero__profile">
-            <div class="hero__photo-ring">
+          <div class="hero__photo-card">
+            <div class="hero__photo-frame">
               <img
                 src="assets/ankita-bhadane.jpg"
                 alt="Ankita Bhadane — Cloud / DevOps Engineer"
                 class="hero__photo"
-                width="200"
-                height="200"
+                width="260"
+                height="320"
               />
+              <span class="hero__photo-badge">DevOps</span>
             </div>
-            <ul class="hero__stats">
-              <li><strong>6+</strong> yrs experience</li>
-              <li><strong>4</strong> certifications</li>
-              <li><strong>40%</strong> faster setup</li>
-            </ul>
+            <div class="hero__stats-row">
+              <div class="hero__stat-item">
+                <span class="hero__stat-num">6+</span>
+                <span class="hero__stat-label">Years</span>
+              </div>
+              <div class="hero__stat-item">
+                <span class="hero__stat-num">4</span>
+                <span class="hero__stat-label">Certs</span>
+              </div>
+              <div class="hero__stat-item">
+                <span class="hero__stat-num">40%</span>
+                <span class="hero__stat-label">Faster</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -136,87 +146,74 @@
     <!-- Skills -->
     <section class="section section--alt" id="skills">
       <div class="container">
-        <div class="skills__layout">
-          <div class="skills__intro reveal">
-            <span class="section__label">Expertise</span>
-            <h2 class="section__title">Technical Skills</h2>
-            <p class="skills__desc">
-              A balanced toolkit across cloud platforms, automation, security, and
-              day-to-day operations — built from 6 years of hands-on engineering.
-            </p>
-            <div class="skills__highlights">
-              <div class="skills__highlight">
-                <span class="skills__highlight-num">12+</span>
-                <span class="skills__highlight-label">AWS Services</span>
-              </div>
-              <div class="skills__highlight">
-                <span class="skills__highlight-num">8</span>
-                <span class="skills__highlight-label">Skill Areas</span>
-              </div>
-              <div class="skills__highlight">
-                <span class="skills__highlight-num">3</span>
-                <span class="skills__highlight-label">Scripting Langs</span>
-              </div>
+        <div class="section__header reveal">
+          <span class="section__label">Expertise</span>
+          <h2 class="section__title">Technical Skills</h2>
+        </div>
+        <div class="skills__grid">
+          <article class="skill-tile reveal">
+            <div class="skill-tile__icon">☁️</div>
+            <h3 class="skill-tile__title">Cloud Platforms</h3>
+            <div class="skill-tile__tags">
+              <span>AWS EC2</span><span>S3</span><span>RDS</span><span>VPC</span><span>IAM</span>
+              <span>CloudWatch</span><span>Route53</span><span>CloudTrail</span>
+              <span>Azure VMs</span><span>Intune</span><span>AD</span><span>Monitor</span>
             </div>
-          </div>
-          <div class="skills__panel reveal reveal--delay">
-            <div class="skill-row skill-row--cloud">
-              <div class="skill-row__head">
-                <span class="skill-row__icon">☁️</span>
-                <h3>Cloud Platforms</h3>
-              </div>
-              <p class="skill-row__items">AWS EC2 · S3 · RDS · VPC · IAM · CloudWatch · Route53 · CloudTrail · Azure VMs · Intune · AD · Monitor</p>
+          </article>
+          <article class="skill-tile reveal reveal--delay">
+            <div class="skill-tile__icon">🏗️</div>
+            <h3 class="skill-tile__title">Infrastructure as Code</h3>
+            <div class="skill-tile__tags">
+              <span>Terraform</span><span>Modules</span><span>Remote State</span><span>Terraform Cloud</span>
             </div>
-            <div class="skill-row skill-row--iac">
-              <div class="skill-row__head">
-                <span class="skill-row__icon">🏗️</span>
-                <h3>Infrastructure as Code</h3>
-              </div>
-              <p class="skill-row__items">Terraform · Modules · Remote State · Terraform Cloud</p>
+          </article>
+          <article class="skill-tile reveal">
+            <div class="skill-tile__icon">🚀</div>
+            <h3 class="skill-tile__title">CI/CD &amp; Containers</h3>
+            <div class="skill-tile__tags">
+              <span>Jenkins</span><span>GitHub Actions</span><span>CodePipeline</span>
+              <span>Docker</span><span>Kubernetes</span>
             </div>
-            <div class="skill-row skill-row--cicd">
-              <div class="skill-row__head">
-                <span class="skill-row__icon">🚀</span>
-                <h3>CI/CD &amp; Containers</h3>
-              </div>
-              <p class="skill-row__items">Jenkins · GitHub Actions · AWS CodePipeline · Docker · Kubernetes</p>
+          </article>
+          <article class="skill-tile reveal reveal--delay">
+            <div class="skill-tile__icon">🖥️</div>
+            <h3 class="skill-tile__title">Hosting &amp; MSP</h3>
+            <div class="skill-tile__tags">
+              <span>cPanel/WHM</span><span>Plesk</span><span>DNS</span><span>SSL</span>
+              <span>Backup</span><span>M365 Admin</span>
             </div>
-            <div class="skill-row skill-row--host">
-              <div class="skill-row__head">
-                <span class="skill-row__icon">🖥️</span>
-                <h3>Hosting &amp; MSP</h3>
-              </div>
-              <p class="skill-row__items">cPanel/WHM · Plesk · DNS · SSL · Backup Systems · M365 Admin</p>
+          </article>
+          <article class="skill-tile reveal">
+            <div class="skill-tile__icon">📊</div>
+            <h3 class="skill-tile__title">Monitoring &amp; Logging</h3>
+            <div class="skill-tile__tags">
+              <span>CloudWatch</span><span>Datadog</span><span>Nagios</span><span>PRTG</span>
             </div>
-            <div class="skill-row skill-row--monitor">
-              <div class="skill-row__head">
-                <span class="skill-row__icon">📊</span>
-                <h3>Monitoring &amp; Logging</h3>
-              </div>
-              <p class="skill-row__items">CloudWatch · Datadog · Nagios · PRTG</p>
+          </article>
+          <article class="skill-tile reveal reveal--delay">
+            <div class="skill-tile__icon">💻</div>
+            <h3 class="skill-tile__title">Scripting &amp; OS</h3>
+            <div class="skill-tile__tags">
+              <span>PowerShell</span><span>Bash</span><span>Python</span>
+              <span>Windows Server</span><span>Ubuntu</span><span>CentOS</span>
             </div>
-            <div class="skill-row skill-row--script">
-              <div class="skill-row__head">
-                <span class="skill-row__icon">💻</span>
-                <h3>Scripting &amp; OS</h3>
-              </div>
-              <p class="skill-row__items">PowerShell · Bash · Python · Windows Server · Ubuntu · CentOS</p>
+          </article>
+          <article class="skill-tile reveal">
+            <div class="skill-tile__icon">🔒</div>
+            <h3 class="skill-tile__title">Security</h3>
+            <div class="skill-tile__tags">
+              <span>IAM Policies</span><span>AWS KMS</span><span>Network ACLs</span>
+              <span>Intune</span><span>Security Groups</span>
             </div>
-            <div class="skill-row skill-row--security">
-              <div class="skill-row__head">
-                <span class="skill-row__icon">🔒</span>
-                <h3>Security</h3>
-              </div>
-              <p class="skill-row__items">IAM Policies · AWS KMS · Network ACLs · Intune Security · Security Groups</p>
+          </article>
+          <article class="skill-tile reveal reveal--delay">
+            <div class="skill-tile__icon">🛠️</div>
+            <h3 class="skill-tile__title">Tools</h3>
+            <div class="skill-tile__tags">
+              <span>ServiceNow</span><span>Confluence</span><span>JIRA</span><span>GitHub</span>
+              <span>ITGlue</span><span>FreshService</span>
             </div>
-            <div class="skill-row skill-row--tools">
-              <div class="skill-row__head">
-                <span class="skill-row__icon">🛠️</span>
-                <h3>Tools</h3>
-              </div>
-              <p class="skill-row__items">ServiceNow · Confluence · JIRA · GitHub · ITGlue · FreshService</p>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
