@@ -35,9 +35,9 @@ profile/
 ├── css/style.css       # Styles
 ├── js/main.js          # Interactions & animations
 └── assets/
-    └── Ankita_Bhadane_CV.pdf
+    └── Ankita_Bhadane_Resume.pdf
 ```
 
 ## Customize
 
-Edit `index.html` to update content. Styles are in `css/style.css`. Replace `assets/Ankita_Bhadane_CV.pdf` when your resume is updated.
+Edit `index.html` to update content. Styles are in `css/style.css`. Replace `assets/Ankita_Bhadane_Resume.pdf` when your resume is updated.
